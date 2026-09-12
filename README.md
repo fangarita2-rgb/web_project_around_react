@@ -22,7 +22,10 @@ Migración modularizada de la plataforma interactiva **Around The U.S.** desde H
 ```text
 src/
 ├── blocks/           # Hojas de estilo estructuradas por metodología BEM
+├── images/           # Recursos gráficos (logo, avatar, etc.)
+├── vendor/           # Fuentes y normalize.css
 ├── components/       # Componentes React
+│   ├── App.tsx
 │   ├── Footer/
 │   ├── Header/
 │   └── Main/
@@ -30,7 +33,6 @@ src/
 │       └── Popup/    # Componentes de modales y formularios (EditProfile, EditAvatar, NewCard, ImagePopup)
 ├── types/            # Definiciones de tipos globalizados
 │   └── types.ts
-├── App.tsx
 ├── main.tsx
 └── index.css
 ```
