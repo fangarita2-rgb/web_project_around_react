@@ -1,4 +1,4 @@
-import type { CardData } from '../../types/types';
+import type { CardData } from '../../../types/types';
 
 type CardProps = {
   card: CardData;

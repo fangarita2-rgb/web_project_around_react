@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import avatarPath from '../images/avatar.jpg';
-import type { PopupConfig, CardData } from '../types/types';
+import avatarPath from '../../images/avatar.jpg';
+import type { PopupConfig, CardData } from '../../types/types';
 import Popup from './Popup/Popup';
 import NewCard from './Popup/NewCard/NewCard';
 import EditProfile from './Popup/EditProfile/EditProfile';
