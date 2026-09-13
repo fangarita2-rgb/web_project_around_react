@@ -6,6 +6,16 @@
   padding: 40px 0 32px;
 }
 
+.profile__avatar-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 29px;
+  flex-shrink: 0;
+}
+
 .profile__info {
   display: grid;
   grid-template-areas:
@@ -43,7 +53,7 @@
   border-radius: 50%;
   object-fit: cover;
   background-position: center;
-  margin-right: 29px;
+  display: block;
 }
 
 .profile__add-button {
@@ -97,6 +107,10 @@
     text-align: center;
   }
 
+  .profile__avatar-button {
+    margin-right: 0;
+  }
+
   .profile__info {
     width: 100%;
     display: flex;
@@ -118,10 +132,6 @@
     font-size: 14px;
     line-height: 17px;
     max-width: 282px;
-  }
-
-  .profile__image {
-    margin-right: 0;
   }
 
   .profile__add-button {

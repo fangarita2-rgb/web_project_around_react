@@ -67,20 +67,18 @@ export default function Main(): React.JSX.Element {
   return (
     <main className="content">
       <section className="profile page__section">
-        <div className="profile__avatar-container">
-          <button
-            aria-label="Edit avatar"
-            className="profile__avatar-button"
-            type="button"
-            onClick={() => handleOpenPopup(editAvatarPopup)}
-          >
-            <img
-              src={avatarPath}
-              alt="Avatar de Jacques Cousteau"
-              className="profile__avatar"
-            />
-          </button>
-        </div>
+        <button
+          aria-label="Edit avatar"
+          className="profile__avatar-button"
+          type="button"
+          onClick={() => handleOpenPopup(editAvatarPopup)}
+        >
+          <img
+            src={avatarPath}
+            alt="Avatar de Jacques Cousteau"
+            className="profile__image"
+          />
+        </button>
         <div className="profile__info">
           <h1 className="profile__title">Jacques Cousteau</h1>
           <button
@@ -89,7 +87,7 @@ export default function Main(): React.JSX.Element {
             type="button"
             onClick={() => handleOpenPopup(editProfilePopup)}
           />
-          <p className="profile__subtitle">Explorador</p>
+          <p className="profile__description">Explorador</p>
         </div>
         <button
           aria-label="Add card"
@@ -99,7 +97,7 @@ export default function Main(): React.JSX.Element {
         />
       </section>
 
-      <section className="elements page__section">
+      <section className="cards page__section">
         <ul className="cards__list">
           {cards.map((card) => (
             <Card
