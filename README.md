@@ -12,9 +12,10 @@ Migración modularizada de la plataforma interactiva **Around The U.S.** desde H
 
 ## 🛠️ Tecnologías
 
-- React 18+
+- React 19
 - TypeScript
 - Vite
+- ESLint
 - CSS3 / BEM Methodology
 
 ## 📂 Estructura del Proyecto
@@ -35,4 +36,13 @@ src/
 │   └── types.ts
 ├── main.tsx
 └── index.css
+```
+
+## 📦 Cómo ejecutar el proyecto
+
+```bash
+npm install
+npm run dev      # inicia el servidor de desarrollo en el puerto 3000
+npm run lint     # corre ESLint
+npm run build    # genera la versión de producción
 ```
