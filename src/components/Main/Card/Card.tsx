@@ -4,10 +4,20 @@ type CardProps = {
   card: CardData;
   onCardClick: (card: CardData) => void;
   onCardDelete: (card: CardData) => void;
+  onCardLike: (card: CardData) => void;
 };
 
-export default function Card({ card, onCardClick, onCardDelete }: CardProps): React.JSX.Element {
-  const { name, link } = card;
+export default function Card({
+  card,
+  onCardClick,
+  onCardDelete,
+  onCardLike,
+}: CardProps): React.JSX.Element {
+  const { name, link, isLiked } = card;
+
+  const cardLikeButtonClassName = `card__like-button ${
+    isLiked ? 'card__like-button_is-active' : ''
+  }`;
 
   return (
     <li className="card">
@@ -28,7 +38,8 @@ export default function Card({ card, onCardClick, onCardDelete }: CardProps): Re
         <button
           aria-label="Like card"
           type="button"
-          className="card__like-button"
+          className={cardLikeButtonClassName}
+          onClick={() => onCardLike(card)}
         />
       </div>
     </li>
